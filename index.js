@@ -23,12 +23,20 @@ new Vue({
         <!-- <Wall position="0 0 -5"/> -->
       	<!-- <Wall position="-5 0 0" rotation="0 90 0"/> -->
       	<Wall position="5 0 0" rotation="0 -90 0"/>
+        <a-plane 
+              position="1 2 -5"
+              scale="2 4 0"
+              material="src: ./assets/images/sininevaas.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
         <Wall position="0 0 5" rotation="0 -180 0"/>
         <Box position="1 1 0" shadow="cast:true"/>
         <Floor/>
           <floor position="0 0.01 0"/>
         <Floor />
-        <a-entity environment="preset: volcano; fog:3; groundColor: #100; grid: cross"></a-entity>
+        <a-entity environment="preset: volcano; groundColor: #100; grid: cross"></a-entity>
       </Scene>
     </Layout>
     `,
