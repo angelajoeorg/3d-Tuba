@@ -32,6 +32,14 @@ new Vue({
               event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
           ></a-plane>
         <Wall position="0 0 5" rotation="0 -180 0"/>
+        <a-plane 
+              position="4 2 -5"
+              scale="2 4 0"
+              material="src: ./assets/images/sininevaas.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
         <Box position="1 1 0" shadow="cast:true"/>
         <Floor/>
           <floor position="0 0.01 0"/>
