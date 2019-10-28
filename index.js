@@ -12,10 +12,20 @@ new Vue({
       <Scene>
         <template v-slot:assets>
           <a-assets>
-            <a-asset id="chandelier" src="./assets/models/luhter1.obj"></a-asset-item>
+            <a-asset-item id="chandelier" src="./assets/models/luhter1.obj"></a-asset-item>
+
+            <a-asset-item id="nunnu" src="./assets/models/nunnu.obj"></a-asset-item>
+            
+
           </a-assets>
         </template>
-            <Ceiling position="0 4 0">
+
+        <a-camera position="0 1.8 2" tilt-turn twoway-motion></a-camera>
+           
+        <a-entity class="nunnu" obj-model="obj:#nunnu"></a-entity>
+
+        <Ceiling position="0 4 0">
+      
         <a-entity material="color:rgba(255,255,255,0.3); emissive: #faf9ff; emissiveIntensity: 1" class="chandelier" position="0 -0.70 0" scale="0.001 0.001 0.001" obj-model="obj: #chandelier"></a-entity>
           <a-entity light="type: point; intensity: 0.6; color: #faf9ff; castShadow: true " position="0 -0.7 0" ></a-entity>
           <a-entity light="type: ambient; intensity: 0.1; color: #faf9ff "></a-entity>  
