@@ -33,16 +33,96 @@ new Vue({
         </Ceiling>
         <!-- <Wall position="0 0 -5"/> -->
         <!-- <Wall position="-5 0 0" rotation="0 90 0"/> -->
-        <aatrium position="0.9 0 -0.06" rotation="0 -90 0"/>
-        <aatrium position="0.005 0 -1.2" rotation="0 0 0"/>
-        <aatrium position="0.6 2 0" rotation="0 90 0"/>
-        <aatrium position="1.2 0 0.06" rotation="0 0 0"/>
+        <aatrium position="-0.7 0 -0.45" rotation="0 -90 0"/>
+        <aatrium position="0 0 -1.2" rotation="0 0 0"/>
+        <aatrium position="0.7 0 -0.45" rotation="0 90 0"/>
+        <!-- <aatrium position="1.2 0 0.06" rotation="0 0 0"/> -->
 
       	<Wall position="5 0 0" rotation="0 -90 0"/>
         <a-plane 
-              position="1 2 -5"
+              position="-4 2 -5"
               scale="2 4 0"
               material="src: ./assets/images/sininevaas.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="-4.9 2.5 3" rotation="0 90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna2.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="-4.9 1.5 3" rotation="0 90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna3.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="-4.9 1.5 1" rotation="0 90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna4.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="-4.9 2.5 1" rotation="0 90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna5.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="4.9 2.5 1" rotation="0 -90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna6.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="4.9 2.5 3" rotation="0 -90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna7.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="4.9 1.5 3" rotation="0 -90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna8.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="4.9 1.5 1" rotation="0 -90 0"
+              scale="2 1 0"
+              material="src: ./assets/images/muna9.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="4.9 2 -4" rotation="0 -90 0"
+              scale="2 4 0"
+              material="src: ./assets/images/vaas.jpg"
+              class="hover"
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+          ></a-plane>
+          <a-plane 
+              position="-4.9 2 -4" rotation="0 90 0"
+              scale="2 4 0"
+              material="src: ./assets/images/oun.jpg"
               class="hover"
               event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
               event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
@@ -51,7 +131,7 @@ new Vue({
         <a-plane 
               position="4 2 -5"
               scale="2 4 0"
-              material="src: ./assets/images/sininevaas.jpg"
+              material="src: ./assets/images/tulbid.jpg"
               class="hover"
               event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
               event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
